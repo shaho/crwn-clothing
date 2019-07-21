@@ -21,3 +21,10 @@ export const selectorCartItemsCount = createSelector(
     );
   },
 );
+
+export const selectCartHidden = createSelector(
+  [selectCart],
+  (cart) => {
+    return cart.hidden;
+  },
+);
