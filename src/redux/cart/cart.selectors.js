@@ -28,3 +28,14 @@ export const selectCartHidden = createSelector(
     return cart.hidden;
   },
 );
+
+export const selectCartTotal = createSelector(
+  [selectCartItems],
+  (cartItems) => {
+    return cartItems.reduce(
+      (accumulatedQuantity, cartItem) =>
+        accumulatedQuantity + cartItem.quantity * cartItem.price,
+      0,
+    );
+  },
+);
