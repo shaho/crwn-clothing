@@ -1,3 +1,3 @@
 # Crown Clothing
-Companion repo for Crown Clothing Project
+Companion repository for Crown Clothing project
 
